@@ -1,0 +1,2 @@
+.skpq-cards { display: grid; gap: 1rem; grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.skpq-cards div { background: #fff; border: 1px solid #dcdcde; padding: 1rem; }
