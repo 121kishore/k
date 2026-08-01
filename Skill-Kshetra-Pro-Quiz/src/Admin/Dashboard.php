@@ -27,6 +27,11 @@ final class Dashboard
         <?php
     }
 
+    public static function categories(): void
+    {
+        echo '<div class="wrap"><h1>' . esc_html__('Categories', 'skill-kshetra-pro-quiz') . '</h1></div>';
+    }
+
     public static function settings(): void
     {
         echo '<div class="wrap"><h1>' . esc_html__('Settings', 'skill-kshetra-pro-quiz') . '</h1></div>';
