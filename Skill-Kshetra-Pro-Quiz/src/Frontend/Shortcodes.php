@@ -15,7 +15,7 @@ final class Shortcodes
         add_shortcode('smartquiz', [$this, 'render']);
     }
 
-    public function render(array $atts): string
+    public function render($atts): string
     {
         wp_enqueue_style('skpq-frontend');
         wp_enqueue_script('skpq-frontend');
@@ -25,7 +25,7 @@ final class Shortcodes
         }
         $questions = Question::for_quiz((int) $quiz['id']);
         ob_start();
-        include SKPQ_PLUGIN_DIR . 'includes/Frontend/quiz-template.php';
+        include SKPQ_PLUGIN_DIR . 'src/Views/quiz-shortcode.php';
         return (string) ob_get_clean();
     }
 }

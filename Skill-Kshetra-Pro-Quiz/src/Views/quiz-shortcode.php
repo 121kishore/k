@@ -1,6 +1,6 @@
 <?php if (!defined('ABSPATH')) { exit; } ?>
 <div class="skpq-quiz">
-    <h2><?php echo esc_html($quiz['name']); ?></h2>
+    <h2><?php echo esc_html($quiz['title']); ?></h2>
     <?php foreach ($questions as $index => $question) : ?>
         <section class="skpq-question<?php echo $index === 0 ? ' is-active' : ''; ?>" data-explanation="<?php echo esc_attr($question['explanation']); ?>">
             <p><?php echo esc_html(sprintf(__('Question %1$d / %2$d', 'skill-kshetra-pro-quiz'), $index + 1, count($questions))); ?></p>

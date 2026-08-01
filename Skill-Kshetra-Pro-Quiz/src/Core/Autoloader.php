@@ -20,7 +20,7 @@ final class Autoloader
         }
 
         $relative = substr($class, strlen($prefix));
-        $path = SKPQ_PLUGIN_DIR . 'includes/' . str_replace('\\', '/', $relative) . '.php';
+        $path = SKPQ_PLUGIN_DIR . 'src/' . str_replace('\\', '/', $relative) . '.php';
         if (is_readable($path)) {
             require_once $path;
         }
