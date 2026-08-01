@@ -1,0 +1,9 @@
+.skpq-cards { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); margin-top: 1rem; }
+.skpq-cards div { background: #fff; border: 1px solid #dcdcde; padding: 1rem; }
+.skpq-cards strong { display: block; }
+.skpq-cards span { display: block; font-size: 2rem; margin-top: .5rem; }
+.skpq-form .regular-text, .skpq-question-builder .regular-text { max-width: 520px; width: 100%; }
+.skpq-builder-grid { display: grid; gap: 2rem; grid-template-columns: minmax(0, 1fr) 320px; align-items: start; }
+.skpq-preview { background: #fff; border: 1px solid #dcdcde; padding: 1rem; position: sticky; top: 48px; }
+.skpq-filters { display: flex; gap: .5rem; align-items: center; }
+@media (max-width: 960px) { .skpq-builder-grid { grid-template-columns: 1fr; } .skpq-preview { position: static; } }
