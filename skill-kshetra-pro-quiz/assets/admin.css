@@ -1,0 +1,3 @@
+.sqp-admin-wrap .sqp-cards { display: grid; gap: 1rem; grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.sqp-admin-wrap .sqp-cards div { background: #fff; border: 1px solid #dcdcde; padding: 1rem; }
+.sqp-admin-wrap .sqp-cards span { display: block; font-size: 2rem; margin-top: .5rem; }
